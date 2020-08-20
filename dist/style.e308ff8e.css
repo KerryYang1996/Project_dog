@@ -5,12 +5,8 @@
 }
 body {
   background: cornflowerblue;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 .dog {
-  /* border: 1px solid red; */
   width: 500px;
   margin: 100px auto;
   height: 500px;
@@ -33,7 +29,6 @@ body {
   position: absolute;
   z-index: 1;
   background: #f79e38;
-  border: 1px solid yellow;
   width: 50px;
   height: 40px;
 }
@@ -58,24 +53,23 @@ body {
   height: 8px;
   background: black;
   border-radius: 50%;
-  animation:shinning 5s infinite;
+  animation: shinning 5s infinite;
 }
-@keyframes shinning{
-    0%,100%{
-        animation-timing-function: step-end;
-        opacity：1;
-    }
-    50%,55%{
-        animation-timing-function: step-start;
-        opacity: 0;
-    }
- 
+@keyframes shinning {
+  0%,
+  100% {
+    animation-timing-function: step-end;
+  }
+  50%,
+  55% {
+    animation-timing-function: step-start;
+    opacity: 0;
+  }
 }
 .eye_left {
   left: 32px;
 }
 .eye_right {
-  top: 18px;
   right: 30px;
 }
 .ear {
@@ -98,7 +92,6 @@ body {
   position: absolute;
   top: 245px;
   left: 185px;
-
   width: 100px;
   height: 100px;
 }
@@ -172,7 +165,6 @@ body {
   left: 10px;
 }
 
-
 .legs {
   position: relative;
   top: 130px;
@@ -227,28 +219,31 @@ body {
   transform: rotate(-30deg);
   animation: right 1s ease infinite;
 }
-@keyframes left{
-    0%,100%{
-transform: rotate(30deg);
-    }
-    25%,75%{
-        transform: rotate(0);
-    }
-    50%{
-        transform: rotate(-30deg);
-    }
+@keyframes left {
+  0%,
+  100% {
+    transform: rotate(30deg);
+  }
+  25%,
+  75% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
 }
-@keyframes right{
-    0%,100%{
-transform: rotate(-30deg);
-    }
-    25%,75%{
-        transform: rotate(0);
-    }
-    50%{
-        transform: rotate(30deg);
-    }
-
+@keyframes right {
+  0%,
+  100% {
+    transform: rotate(-30deg);
+  }
+  25%,
+  75% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
 }
 .tail {
   /* border: 1px solid black; */
@@ -264,23 +259,23 @@ transform: rotate(-30deg);
   transform-origin: left center;
   animation: wave 300ms ease infinite;
 }
-  @keyframes wave {
-    0% {
-      transform: rotate(-30deg);
-    }
-    25% {
-      transform: rotate(-60deg);
-    }
-    50% {
-      transform: rotate(-30deg);
-    }
-    75% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(-30deg);
-    }
+@keyframes wave {
+  0% {
+    transform: rotate(-30deg);
+  }
+  25% {
+    transform: rotate(-60deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-30deg);
   }
 }
+
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */
