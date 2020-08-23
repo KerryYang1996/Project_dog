@@ -4,47 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog</title>
-    <link rel="stylesheet" href="/style.e308ff8e.css">
-  <script src="/style.e308ff8e.js"></script></head>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+  </head>
   <body>
-    <div class="dog">
-      <div class="head">
-        <div class="face face_left"></div>
-        <div class="face face_right"></div>
-        <div class="eye eye_left"></div>
-        <div class="eye eye_right"></div>
-
-        <div class="mouth"></div>
-      </div>
-      <div class="ears">
-        <div class="ear ear_left"></div>
-        <div class="ear ear_right"></div>
-      </div>
-      <div class="nose">
-        <div class="nose_white"></div>
-        <div class="nose_black"></div>
-      </div>
-
-      <div class="body">
-        <div class="neck"></div>
-        <div class="neck_fur fur1"></div>
-        <div class="neck_fur fur2"></div>
-      </div>
-      <div class="legs">
-        <div class="leg leg_front front_left">
-          <div class="white front_left_white"></div>
-        </div>
-        <div class="leg leg_front front_right">
-          <div class="white front_right_white"></div>
-        </div>
-        <div class="leg leg_back back_left">
-          <div class="white back_left_white"></div>
-        </div>
-        <div class="leg leg_back back_right">
-          <div class="white back_right_white"></div>
-        </div>
-      </div>
-      <div class="tail"></div>
+    <div id="demo"></div>
+    <style id="demo2"></style>
+    <div id="buttons">
+      <button id="play">播放</button>
+      <button id="fast">快速</button>
+      <button id="normal">中速</button>
+      <button id="slow">慢速</button>
+      <button id="pause">暂停</button>
     </div>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #buttons {
+        position: fixed;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 10px;
+        z-index: 10;
+      }
+      #buttons > button {
+        margin-bottom: 10px;
+        padding: 4px 8px;
+      }
+
+      #html {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+      }
+      #demo2 {
+        display: none;
+      }
+      #demo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        overflow-y: auto;
+      }
+      #demo::-webkit-scrollbar {
+        display: none;
+      }</style>
+    <div id="html">
+      <div class="dog">
+        <div class="head">
+          <div class="face face_left"></div>
+          <div class="face face_right"></div>
+          <div class="eye eye_left"></div>
+          <div class="eye eye_right"></div>
+          <div class="mouth"></div>
+        </div>
+        <div class="ears">
+          <div class="ear ear_left"></div>
+          <div class="ear ear_right"></div>
+        </div>
+        <div class="nose">
+          <div class="nose_white"></div>
+          <div class="nose_black"></div>
+        </div>
+
+        <div class="body">
+          <div class="neck"></div>
+          <div class="neck_fur fur1"></div>
+          <div class="neck_fur fur2"></div>
+        </div>
+        <div class="legs">
+          <div class="leg leg_front front_left">
+            <div class="white front_left_white"></div>
+          </div>
+          <div class="leg leg_front front_right">
+            <div class="white front_right_white"></div>
+          </div>
+          <div class="leg leg_back back_left">
+            <div class="white back_left_white"></div>
+          </div>
+          <div class="leg leg_back back_right">
+            <div class="white back_right_white"></div>
+          </div>
+        </div>
+        <div class="tail"></div>
+      </div>
+    </div>
+    <script src="/main.1f19ae8e.js"></script>
   </body>
 </html>

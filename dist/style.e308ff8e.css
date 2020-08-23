@@ -7,10 +7,9 @@ body {
   background: cornflowerblue;
 }
 .dog {
-  width: 500px;
-  margin: 100px auto;
-  height: 500px;
   position: relative;
+  margin: 100px auto;
+  height: 50vh;
 }
 
 .head {
